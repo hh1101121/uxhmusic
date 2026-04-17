@@ -1,0 +1,20 @@
+{
+  "name": "uxhmusic",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "check": "node --check src/worker.js && node --check public/app.js"
+  },
+  "devDependencies": {
+    "wrangler": "^4.26.0"
+  },
+  "dependencies": {
+    "async": "^3.2.6",
+    "cheerio": "^1.2.0",
+    "entities": "^7.0.1",
+    "text-encoding": "^0.7.0"
+  }
+}
